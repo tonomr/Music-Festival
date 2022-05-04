@@ -59,12 +59,17 @@ function imagesMin(done) {
   done();
 }
 
+function videoToBuild(done) {
+  src("src/video/**/*.{mp4,ogg,webm}").pipe(dest("build/video"));
+  done();
+}
+
 function javascript(done) {
   src("src/js/**/*.js")
-  .pipe(sourcemaps.init())
-  .pipe(terser())
-  .pipe(sourcemaps.write("."))
-  .pipe(dest("build/js"));
+    .pipe(sourcemaps.init())
+    .pipe(terser())
+    .pipe(sourcemaps.write("."))
+    .pipe(dest("build/js"));
   done();
 }
 
@@ -75,6 +80,7 @@ function dev(done) {
 }
 
 exports.css = css;
+exports.videoToBuild = videoToBuild;
 exports.javascript = javascript;
 exports.webpVersion = webpVersion;
 exports.avifVersion = avifVersion;

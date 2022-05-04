@@ -510,3 +510,78 @@ img {
   color: #F53756;
   font-weight: 700;
 }
+
+.lineup {
+  background-color: #F53756;
+  padding: 5rem 0;
+}
+.lineup h3,
+.lineup p {
+  text-align: center;
+  color: #FFFFFF;
+}
+.lineup .day {
+  text-transform: uppercase;
+  margin: 5rem 0;
+}
+
+@media (min-width: 768px) {
+  .stages-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.stages-container p {
+  color: #000000;
+}
+
+.stage {
+  margin-bottom: 1rem;
+  padding: 2rem;
+}
+.stage p:after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 2rem auto 0 auto;
+}
+
+.rock .stage-name:after {
+  background-image: url(../img/rock_icon.png);
+}
+
+.edm .stage-name:after {
+  background-image: url(../img/edm_icon.png);
+}
+
+.calendar {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calendar li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.calendar li span {
+  font-weight: 400;
+}
+
+.bg-yellow {
+  background-color: #FEF46D;
+}
+.bg-yellow li:nth-child(odd) {
+  background-color: #eada02;
+}
+
+.bg-green {
+  background-color: #4CB8B3;
+}
+.bg-green li:nth-child(odd) {
+  background-color: #3b9691;
+}

@@ -1,0 +1,75 @@
+@use "base/vars" as v;
+@use "base/mixins" as m;
+
+.lineup {
+  background-color: v.$pinkColor;
+  padding: 5rem 0;
+  h3,
+  p {
+    text-align: center;
+    color: v.$whiteColor;
+  }
+  .day {
+    text-transform: uppercase;
+    margin: 5rem 0;
+  }
+}
+
+.stages-container {
+  @include m.tablet {
+    @include m.grid(2, 5rem);
+  }
+  p {
+    color: v.$blackColor;
+  }
+}
+
+.stage {
+  margin-bottom: 1rem;
+  padding: 2rem;
+  p {
+    &:after {
+      content: "";
+      display: block;
+      width: 20rem;
+      height: 10rem;
+      background-size: 15rem;
+      background-repeat: no-repeat;
+      background-position: center center;
+      margin: 2rem auto 0 auto;
+    }
+  }
+}
+
+.rock .stage-name:after {
+  background-image: url(../img/rock_icon.png);
+}
+
+.edm .stage-name:after {
+  background-image: url(../img/edm_icon.png);
+}
+
+.calendar {
+  @include m.reset-list;
+  li {
+    padding: 2.5rem;
+    font-weight: 700;
+    span {
+      font-weight: 400;
+    }
+  }
+}
+
+.bg-yellow {
+  background-color: v.$yellowColor;
+  li:nth-child(odd) {
+    background-color: darken($color: v.$yellowColor, $amount: 25%);
+  }
+}
+
+.bg-green {
+  background-color: v.$aquaColor;
+  li:nth-child(odd) {
+    background-color: darken($color: v.$aquaColor, $amount: 10%);
+  }
+}

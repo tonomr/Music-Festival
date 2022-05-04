@@ -1,37 +1,37 @@
 @use "vars" as v;
 
 @mixin phone {
-    @media (min-width: v.$phone) {
-        @content;
-    }
+  @media (min-width: v.$phone) {
+    @content;
+  }
 }
 
 @mixin tablet {
-    @media (min-width: v.$tablet) {
-        @content;
-    }
+  @media (min-width: v.$tablet) {
+    @content;
+  }
 }
 
 @mixin desktop {
-    @media (min-width: v.$desktop) {
-        @content;
-    }
+  @media (min-width: v.$desktop) {
+    @content;
+  }
 }
 
 @mixin desktopXL {
-    @media (min-width: v.$desktopXL) {
-        @content;
-    }
+  @media (min-width: v.$desktopXL) {
+    @content;
+  }
 }
 
 @mixin grid($columns, $spacing) {
-    display: grid;
-    grid-template-columns: repeat($columns, 1fr);
-    gap: $spacing;
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $spacing;
 }
 
 @mixin reset-list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }

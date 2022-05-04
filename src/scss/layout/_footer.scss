@@ -1,11 +1,11 @@
-@use 'base/vars' as v;
+@use "base/vars" as v;
 
 .site-footer {
-    background-color: v.$pinkColor;
-    padding: 1rem;
-    p {
-        margin: 0;
-        text-align: center;
-        color: v.$whiteColor;
-    }
+  background-color: v.$pinkColor;
+  padding: 1rem;
+  p {
+    margin: 0;
+    text-align: center;
+    color: v.$whiteColor;
+  }
 }

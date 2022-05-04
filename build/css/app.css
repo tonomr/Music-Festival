@@ -355,6 +355,9 @@ body {
 body.fix-body {
   overflow: hidden;
 }
+body.body-scroll {
+  padding-top: 8.6rem;
+}
 
 p {
   font-size: 2rem;
@@ -372,7 +375,9 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0 0 5rem 0;
 }
 
@@ -396,10 +401,19 @@ img {
 }
 
 .header {
-  background-color: #4CB8B3;
+  background-color: #4cb8b3;
+}
+@media (min-width: 768px) {
+  .header.fixed {
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0.1rem 0.2rem 0.3rem #333;
+  }
 }
 .header h1 {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -425,7 +439,7 @@ img {
   }
 }
 .nav-main a {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 2.4rem;
   display: block;
   text-align: center;
@@ -437,7 +451,7 @@ img {
   }
 }
 .nav-main a:hover {
-  color: #FEF46D;
+  color: #fef46d;
 }
 
 .video {
@@ -470,13 +484,13 @@ img {
   z-index: 10;
 }
 .content-video h2 {
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 7rem;
   margin: 0;
 }
 .content-video p {
-  background-color: #F53756;
-  color: #FFFFFF;
+  background-color: #f53756;
+  color: #ffffff;
   display: inline-block;
   padding: 1rem 2rem;
   font-weight: 700;
@@ -510,18 +524,18 @@ img {
   margin-bottom: 2rem;
 }
 .content-festival .date {
-  color: #F53756;
+  color: #f53756;
   font-weight: 700;
 }
 
 .lineup {
-  background-color: #F53756;
+  background-color: #f53756;
   padding: 5rem 0;
 }
 .lineup h3,
 .lineup p {
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .lineup .day {
   text-transform: uppercase;
@@ -576,14 +590,14 @@ img {
 }
 
 .bg-yellow {
-  background-color: #FEF46D;
+  background-color: #fef46d;
 }
 .bg-yellow li:nth-child(odd) {
   background-color: #eada02;
 }
 
 .bg-green {
-  background-color: #4CB8B3;
+  background-color: #4cb8b3;
 }
 .bg-green li:nth-child(odd) {
   background-color: #3b9691;
@@ -650,7 +664,7 @@ img {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: #000000;
   display: grid;
   place-items: center;
@@ -666,7 +680,7 @@ img {
 }
 .tickets h3 {
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 2rem;
 }
 @media (min-width: 768px) {
@@ -683,22 +697,22 @@ img {
 .pass-name {
   text-align: center;
   font-size: 2.8rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .pass-header p, .pass-footer p {
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
 }
 .pass-header {
-  background-color: #F53756;
+  background-color: #f53756;
 }
 .pass-header p {
   text-transform: uppercase;
   font-size: 1.6rem;
 }
 .pass-body {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .pass-body ul {
   margin: 0;
@@ -707,12 +721,12 @@ img {
 }
 .pass-body ul li,
 .pass-body ul :nth-child(odd) {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 1rem;
   border-bottom: 1px solid #e1e1e1;
 }
 .pass-footer {
-  background-color: #752F97;
+  background-color: #752f97;
 }
 .pass-footer p {
   font-size: 2.4rem;
@@ -720,11 +734,11 @@ img {
 }
 
 .site-footer {
-  background-color: #F53756;
+  background-color: #f53756;
   padding: 1rem;
 }
 .site-footer p {
   margin: 0;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }

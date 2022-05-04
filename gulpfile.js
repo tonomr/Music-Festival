@@ -49,13 +49,20 @@ function imagesMin(done) {
   done();
 }
 
+function javascript(done) {
+  src("src/js/**/*.js").pipe(dest("build/js"));
+  done();
+}
+
 function dev(done) {
   watch("src/scss/**/*.scss", css);
+  watch("src/js/**/*.js", javascript);
   done();
 }
 
 exports.css = css;
+exports.javascript = javascript;
 exports.webpVersion = webpVersion;
 exports.avifVersion = avifVersion;
 exports.imagesMin = imagesMin;
-exports.dev = parallel(imagesMin, webpVersion, dev);
+exports.dev = parallel(imagesMin, webpVersion, javascript, dev);

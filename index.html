@@ -18,9 +18,9 @@
       <div class="container content-header">
         <h1>Rock & EDM Festival</h1>
         <nav class="nav-main">
-          <a href="#">Line Up</a>
-          <a href="#">Gallery</a>
-          <a href="#">Tickets</a>
+          <a href="#lineup">Line Up</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#tickets">Tickets</a>
         </nav>
       </div>
     </header>
@@ -65,7 +65,7 @@
       </div>
     </section>
 
-    <section class="lineup">
+    <section id="lineup" class="lineup">
       <h3>LineUp</h3>
       <p class="day">Friday 21</p>
       <div class="container stages-container">
@@ -125,10 +125,52 @@
       <!-- .stages-container -->
     </section>
 
-    <section class="container gallery">
+    <section id="gallery" class="container gallery">
       <h3>Gallery</h3>
       <ul class="gallery-images"></ul>
     </section>
+
+    <section id="tickets" class="tickets bg-green">
+      <h3>Tickets</h3>
+      <div class="container container-tickets">
+        <div class="basic pass">
+          <p class="pass-name">1 Day Pass</p>
+          <header class="pass-header">
+            <p>Include</p>
+          </header>
+          <div class="pass-body">
+            <ul>
+              <li>Access to both stages</li>
+              <li>Food and drinks</li>
+            </ul>
+          </div>
+          <footer class="pass-footer">
+            <p>$10</p>
+          </footer>
+        </div>
+        <div class="premium pass">
+          <p class="pass-name">2 Day Pass</p>
+          <header class="pass-header">
+            <p>Include</p>
+          </header>
+          <div class="pass-body">
+            <ul>
+              <li>Access to both stages</li>
+              <li>Food and drinks</li>
+              <li>Event shirt</li>
+              <li>VIP Pass</li>
+            </ul>
+          </div>
+          <footer class="pass-footer">
+            <p>$15</p>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>Rock & EDM Festival. All rights reserved.</p>
+    </footer>
 
     <script src="build/js/app.js"></script>
   </body>

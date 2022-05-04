@@ -1,0 +1,60 @@
+@use "base/vars" as v;
+@use "base/mixins" as m;
+
+.tickets {
+  padding: 5rem 0;
+  h3 {
+    text-align: center;
+    color: v.$whiteColor;
+    margin-bottom: 2rem;
+  }
+
+  .container-tickets {
+    @include m.tablet {
+      @include m.grid(2, 5rem);
+    }
+  }
+}
+
+.pass {
+  color: v.$blackColor;
+  &-name {
+    text-align: center;
+    font-size: 2.8rem;
+    color: v.$whiteColor;
+  }
+  &-header,
+  &-footer {
+    p {
+      text-align: center;
+      color: v.$whiteColor;
+      margin: 0;
+    }
+  }
+  &-header {
+    background-color: v.$pinkColor;
+    p {
+      text-transform: uppercase;
+      font-size: 1.6rem;
+    }
+  }
+  &-body {
+    background-color: v.$whiteColor;
+    ul {
+      @include m.reset-list;
+      li,
+      :nth-child(odd) {
+        background-color: v.$whiteColor;
+        padding: 1rem;
+        border-bottom: 1px solid #e1e1e1;
+      }
+    }
+  }
+  &-footer {
+    background-color: v.$purpleColor;
+    p {
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+  }
+}

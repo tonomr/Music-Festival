@@ -660,3 +660,71 @@ img {
 .close-button:hover {
   cursor: pointer;
 }
+
+.tickets {
+  padding: 5rem 0;
+}
+.tickets h3 {
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .tickets .container-tickets {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.pass {
+  color: #000000;
+}
+.pass-name {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #FFFFFF;
+}
+.pass-header p, .pass-footer p {
+  text-align: center;
+  color: #FFFFFF;
+  margin: 0;
+}
+.pass-header {
+  background-color: #F53756;
+}
+.pass-header p {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+.pass-body {
+  background-color: #FFFFFF;
+}
+.pass-body ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pass-body ul li,
+.pass-body ul :nth-child(odd) {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.pass-footer {
+  background-color: #752F97;
+}
+.pass-footer p {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.site-footer {
+  background-color: #F53756;
+  padding: 1rem;
+}
+.site-footer p {
+  margin: 0;
+  text-align: center;
+  color: #FFFFFF;
+}

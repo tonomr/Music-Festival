@@ -4,6 +4,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function startApp() {
   createGallery();
+  scrollNav();
+}
+
+function scrollNav() {
+  const links = document.querySelectorAll(".nav-main a");
+  links.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const sectionScroll = e.target.attributes.href.value;
+      const section = document.querySelector(sectionScroll);
+      section.scrollIntoView({ behavior: "smooth" });
+    });
+  });
 }
 
 function createGallery() {
